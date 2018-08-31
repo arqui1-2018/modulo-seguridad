@@ -1,0 +1,11 @@
+{
+  "name": "modulo-seguridad",
+  "version": "1.0.0",
+  "description": "Modulo de seguridad interna",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grupo2",
+  "license": "ISC"
+}
