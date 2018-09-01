@@ -1,5 +1,3 @@
-var express require('express');
-var app = express();
 var http = require('http');
 
 http.createServer(function (req, res) {
@@ -8,3 +6,4 @@ http.createServer(function (req, res) {
     res.end('Modulo de seguridad interna corriendo...');
     
 }).listen(process.env.PORT || 8080);
+//
