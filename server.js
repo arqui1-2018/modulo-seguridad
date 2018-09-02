@@ -6,7 +6,7 @@ http.createServer(function (req, res) {
     if (req.method == 'POST') {
     	res.writeHead(200, { 'Content-Type': 'text/html' });
     	res.end('SE HIZO PETICION POST AL SERVIDOR...');
-    }else if (true) {
+    }else if (req.method == 'GET') {
     	res.writeHead(200, { 'Content-Type': 'text/html' });
     	res.end('SE HIZO PETICION GET AL SERVIDOR...');
     }else {
