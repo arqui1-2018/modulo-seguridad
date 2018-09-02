@@ -1,9 +1,14 @@
 var http = require('http');
+var bodyParser = require('body-parser');
 
 http.createServer(function (req, res) {
     
-    res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end('Modulo de seguridad interna corriendo...');
+    if (req.method == 'POST') {
+    	res.writeHead(200, { 'Content-Type': 'text/html' });
+    	res.end('SE HIZO PETICION POST AL SERVIDOR...');
+    }else{
+    	res.writeHead(200, { 'Content-Type': 'text/html' });
+    	res.end('Modulo de seguridad interna corriendo...');
+    }
     
 }).listen(process.env.PORT || 8080);
-//
